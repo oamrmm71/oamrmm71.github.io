@@ -117,15 +117,15 @@ h2{
 /* SKILLS */
 .skills{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
   gap:20px;
 }
 
 .skill{
   background:#1e293b;
   padding:20px;
-  text-align:center;
   border-radius:12px;
+  cursor:pointer;
   transition:0.3s;
   box-shadow:0 5px 20px rgba(0,0,0,0.3);
 }
@@ -133,6 +133,19 @@ h2{
 .skill:hover{
   background:#334155;
   transform:translateY(-6px);
+}
+
+.projects{
+  margin-top:15px;
+  max-height:0;
+  overflow:hidden;
+  transition:all 0.4s ease;
+  font-size:0.95rem;
+  color:#cbd5e1;
+}
+
+.skill.active .projects{
+  max-height:400px;
 }
 
 /* CONTACT */
@@ -190,15 +203,56 @@ footer{
 
 <!-- SKILLS -->
 <section id="skills">
-  <h2>Technical Skills</h2>
+  <h2>Technical Skills & Projects</h2>
+
   <div class="skills">
-    <div class="skill">C</div>
-    <div class="skill">C#</div>
-    <div class="skill">Python</div>
-    <div class="skill">JavaScript</div>
-    <div class="skill">Flutter</div>
-    <div class="skill">Linux</div>
-    <div class="skill">OOP</div>
+
+    <div class="skill" onclick="toggleProjects(this)">
+      <strong>Python</strong>
+      <div class="projects">
+        <p>• Chicken Invaders Game</p>
+      </div>
+    </div>
+
+    <div class="skill" onclick="toggleProjects(this)">
+      <strong>C</strong>
+      <div class="projects">
+        <p>• Hospital System</p>
+        <p>• Games</p>
+        <p>• File Compression (Data Structures)</p>
+      </div>
+    </div>
+
+    <div class="skill" onclick="toggleProjects(this)">
+      <strong>C#</strong>
+      <div class="projects">
+        <p>• Banking System (Full UI & UX)</p>
+      </div>
+    </div>
+
+    <div class="skill" onclick="toggleProjects(this)">
+      <strong>JavaScript</strong>
+      <div class="projects">
+        <p>• Banking System (FXML & Scene Builder UI)</p>
+      </div>
+    </div>
+
+    <div class="skill" onclick="toggleProjects(this)">
+      <strong>Flutter</strong>
+      <div class="projects">
+        <p>• Event Planner App</p>
+        <p>• Islami App</p>
+        <p>• Talabat App</p>
+      </div>
+    </div>
+
+    <div class="skill" onclick="toggleProjects(this)">
+      <strong>Linux</strong>
+      <div class="projects">
+        <p>• Editing RISC-V File System</p>
+      </div>
+    </div>
+
   </div>
 </section>
 
@@ -214,6 +268,12 @@ footer{
 <footer>
   © 2026 Omar Mamduh | All Rights Reserved
 </footer>
+
+<script>
+function toggleProjects(element){
+  element.classList.toggle("active");
+}
+</script>
 
 </body>
 </html>
