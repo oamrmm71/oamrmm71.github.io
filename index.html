@@ -149,13 +149,43 @@ h2{
 }
 
 /* CONTACT */
-.contact{
+.contact-box{
+  background:#1e293b;
+  padding:30px;
+  border-radius:15px;
+  max-width:500px;
+  margin:30px auto 0 auto;
+  box-shadow:0 10px 30px rgba(0,0,0,0.3);
+  transition:0.3s;
+  text-align:left;
+}
+
+.contact-box:hover{
+  transform:translateY(-6px);
+}
+
+.contact-box p{
+  margin:10px 0;
+  font-size:1rem;
+  color:#cbd5e1;
+}
+
+.contact-box strong{
+  color:#38bdf8;
+}
+
+.social-links{
+  margin-top:20px;
   text-align:center;
 }
 
-.contact p{
-  margin:10px 0;
-  font-size:1.1rem;
+.social-links img{
+  width:40px;
+  transition:0.3s;
+}
+
+.social-links img:hover{
+  transform:scale(1.2);
 }
 
 /* FOOTER */
@@ -259,9 +289,19 @@ footer{
 <!-- CONTACT -->
 <section id="contact">
   <h2>Contact Me</h2>
-  <div class="contact">
-    <p>📧 omarmourt@gmail.com</p>
-    <p>📱 01095299373</p>
+
+  <div class="contact-box">
+    <p><strong>Birthday :</strong> 12-6-2004</p>
+    <p><strong>Phone :</strong> 01095299373</p>
+    <p><strong>Email :</strong> omarmourt2004@gmail.com</p>
+    <p><strong>City :</strong> Heliopolis , Cairo</p>
+    <p><strong>Postal Code :</strong> 17999</p>
+
+    <div class="social-links">
+      <a href="https://www.linkedin.com/in/omar-mourtaga-92b0872b5/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+      </a>
+    </div>
   </div>
 </section>
 
