@@ -70,20 +70,21 @@ header p{
   font-size:1.2rem;
 }
 
-.btn{
+/* Social icons at top */
+.social-top{
   margin-top:30px;
-  padding:12px 25px;
-  background:#38bdf8;
-  color:#0f172a;
-  border-radius:8px;
-  text-decoration:none;
-  font-weight:600;
+  display:flex;
+  gap:20px;
+  justify-content:center;
+}
+
+.social-top img{
+  width:40px;
   transition:0.3s;
 }
 
-.btn:hover{
-  background:#0ea5e9;
-  transform:scale(1.05);
+.social-top img:hover{
+  transform:scale(1.2);
 }
 
 /* SECTIONS */
@@ -216,7 +217,15 @@ footer{
 <header id="home">
   <h1>Omar Mamduh</h1>
   <p>Mobile Application Developer | Flutter Specialist</p>
-  <a href="https://github.com/oamrmm71" target="_blank" class="btn">Visit My GitHub</a>
+
+  <div class="social-top">
+    <a href="https://github.com/oamrmm71" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+    </a>
+    <a href="https://www.facebook.com/omar.mourtaga/" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+    </a>
+  </div>
 </header>
 
 <!-- ABOUT -->
