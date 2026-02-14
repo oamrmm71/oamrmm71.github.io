@@ -47,13 +47,13 @@ nav a:hover{
   color:#38bdf8;
 }
 
-/* HEADER - HERO */
+/* HERO SECTION */
 header{
   height:100vh;
   display:flex;
   justify-content:space-between;
   align-items:center;
-  padding:0 50px;
+  padding:0 80px;
   background:linear-gradient(135deg,#1e293b,#0f172a);
 }
 
@@ -61,8 +61,8 @@ header{
   display:flex;
   flex-direction:column;
   align-items:flex-start;
-  border-left: 3px solid #38bdf8; /* vertical line */
-  padding-left:20px;
+  border-left:3px solid #38bdf8;
+  padding-left:25px;
 }
 
 .header-left h1{
@@ -74,17 +74,17 @@ header{
 .header-left p{
   font-size:1.2rem;
   color:#94a3b8;
-  margin-bottom:20px;
+  margin-bottom:25px;
 }
 
-/* Social icons at top-left */
+/* Social Icons */
 .social-top{
   display:flex;
-  gap:20px;
+  gap:25px;
 }
 
 .social-top img{
-  width:40px;
+  width:42px;
   transition:0.3s;
 }
 
@@ -92,18 +92,17 @@ header{
   transform:scale(1.2);
 }
 
-/* Right side photo */
+/* Photo */
 .header-right img{
-  width:300px;
-  max-width:100%;
-  border-radius:15px;
-  box-shadow:0 15px 40px rgba(0,0,0,0.5);
+  width:320px;
+  border-radius:20px;
+  box-shadow:0 20px 50px rgba(0,0,0,0.5);
   object-fit:cover;
-  transition:0.3s;
+  transition:0.4s;
 }
 
 .header-right img:hover{
-  transform: scale(1.05);
+  transform:scale(1.05);
 }
 
 /* SECTIONS */
@@ -194,20 +193,6 @@ h2{
   color:#38bdf8;
 }
 
-.social-links{
-  margin-top:20px;
-  text-align:center;
-}
-
-.social-links img{
-  width:40px;
-  transition:0.3s;
-}
-
-.social-links img:hover{
-  transform:scale(1.2);
-}
-
 /* FOOTER */
 footer{
   text-align:center;
@@ -221,22 +206,23 @@ footer{
   to{opacity:1; transform:translateY(0);}
 }
 
-/* Responsive for mobile */
+/* Responsive */
 @media(max-width:900px){
   header{
     flex-direction:column;
-    justify-content:center;
-    padding:50px 20px;
+    padding:60px 20px;
     text-align:center;
   }
+
   .header-left{
     border-left:none;
     padding-left:0;
-    margin-bottom:30px;
     align-items:center;
+    margin-bottom:30px;
   }
+
   .header-right img{
-    width:200px;
+    width:220px;
   }
 }
 </style>
@@ -251,25 +237,30 @@ footer{
   <a href="#contact">Contact</a>
 </nav>
 
-<!-- HERO HEADER -->
+<!-- HERO -->
 <header id="home">
   <div class="header-left">
     <h1>Omar Mamduh</h1>
     <p>Mobile Application Developer</p>
+
     <div class="social-top">
       <a href="https://github.com/oamrmm71" target="_blank">
         <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
       </a>
+
       <a href="https://www.facebook.com/omar.mourtaga/" target="_blank">
         <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+      </a>
+
+      <a href="https://www.linkedin.com/in/omar-mourtaga-92b0872b5/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
       </a>
     </div>
   </div>
 
-<div class="header-right">
-  <img src="https://raw.githubusercontent.com/oamrmm71/oamrmm71.github.io/main/pro.jpg" alt="Omar Mamduh">
-</div>
-
+  <div class="header-right">
+    <img src="https://raw.githubusercontent.com/oamrmm71/oamrmm71.github.io/main/pro.jpg" alt="Omar Mamduh">
+  </div>
 </header>
 
 <!-- ABOUT -->
@@ -289,7 +280,6 @@ footer{
   <h2>Technical Skills & Projects</h2>
 
   <div class="skills">
-
     <div class="skill" onclick="toggleProjects(this)">
       <strong>Python</strong>
       <div class="projects">
@@ -335,7 +325,6 @@ footer{
         <p>• Editing RISC-V File System</p>
       </div>
     </div>
-
   </div>
 </section>
 
@@ -349,12 +338,6 @@ footer{
     <p><strong>Email :</strong> omarmourt2004@gmail.com</p>
     <p><strong>City :</strong> Heliopolis , Cairo</p>
     <p><strong>Postal Code :</strong> 17999</p>
-
-    <div class="social-links">
-      <a href="https://www.linkedin.com/in/omar-mourtaga-92b0872b5/" target="_blank">
-        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
-      </a>
-    </div>
   </div>
 </section>
 
